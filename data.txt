@@ -1,0 +1,16 @@
+Hello From Server 
+
+FILE METADATA SERVICE PROJECT
+
+Device: Arduino Uno with Ethernet Shield
+Server: Python Flask Server
+Connection Type: Ethernet through Switch
+
+This file is used to test a HEAD-like metadata request.
+The Arduino checks the file size and hash before downloading the full file.
+
+If this text changes, the file hash will change.
+When the hash changes, the Arduino will detect that the file was updated and request the full file content from the server.
+
+Project Goal:
+Reduce unnecessary data transfer between the Arduino client and the Python server.
